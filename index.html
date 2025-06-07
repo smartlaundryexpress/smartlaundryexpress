@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart Laundry Express</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+
+      .soft-blur {
+        filter: blur(0.8px); /* <- kamu bisa ubah ke 0.5px, 0.8px, dll */
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-900">
+    <!-- Header -->
+    <header class="bg-gray-800 bg-opacity-90 fixed w-full z-30">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex-shrink-0">
+            <a class="text-white text-lg font-semibold italic" href="#">
+              Smart Laundry
+              <span class="font-extrabold text-blue-600">EXPRESS!</span>
+            </a>
+          </div>
+          <div class="hidden md:flex space-x-8">
+            <a class="text-white text-sm font-normal hover:underline" href="#"
+              >Home</a
+            >
+            <a
+              class="text-white text-sm font-normal hover:underline"
+              href="#tentang"
+              >Tentang Kami</a
+            >
+            <a
+              class="text-white text-sm font-normal hover:underline"
+              href="#layanan"
+              >Layanan Kami</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="relative h-screen pt-20 overflow-hidden">
+      <!-- Background Image (Blur Only) -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="LAUNDRYY.jpg"
+          alt="Laundry Background"
+          class="w-full h-full object-cover soft-blur"
+        />
+      </div>
+
+      <!-- Hero Content -->
+      <div
+        class="relative z-10 px-8 top-1/2 transform -translate-y-1/2 max-w-3xl"
+      >
+        <h1
+          class="text-4xl sm:text-5xl font-extrabold text-white leading-tight max-w-xl"
+        >
+          <span class="text-blue-600">Smart</span><br />
+          Laundry <span class="text-blue-600">Express!</span>
+        </h1>
+        <p class="mt-3 text-white text-sm sm:text-base max-w-md">
+          Keamanan dan kebersihan Barang dan Pakaian Anda Terjamin!
+        </p>
+        <a
+          href="https://wa.me/6282192030110?text=Halo%20Smart%20Laundry!%20Saya%20ingin%20bertanya%20tentang%20layanan%20laundry."
+          target="_blank"
+          class="inline-block mt-6 bg-yellow-400 text-gray-900 font-semibold text-sm sm:text-base px-5 py-2 rounded-md hover:bg-yellow-500 transition"
+        >
+          Hubungi Kami!
+        </a>
+      </div>
+    </main>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="py-20 bg-white text-gray-800 text-center">
+      <h2 class="text-2xl font-bold mb-4">Tentang Kami</h2>
+      <p class="max-w-xl mx-auto mb-4">
+        Kami adalah layanan laundry modern yang mengutamakan kualitas,
+        kecepatan, dan kenyamanan.
+      </p>
+
+      <div class="mt-6 text-sm sm:text-base">
+        <p class="mb-2">
+          <i class="fab fa-whatsapp text-green-500 mr-2"></i>
+          WhatsApp:
+          <a
+            href="https://wa.me/6282192030110"
+            class="text-blue-600 hover:underline"
+          >
+            +62 82192030110
+          </a>
+        </p>
+        <p class="mb-2">
+          <i class="fas fa-envelope text-gray-600 mr-2"></i>
+          Email:
+          <a
+            href="mailto:smartlaundry@example.com"
+            class="text-blue-600 hover:underline"
+          >
+            smartlaundry@example.com
+          </a>
+        </p>
+        <p class="mb-2">
+          <i class="fab fa-instagram text-pink-500 mr-2"></i>
+          Instagram:
+          <a
+            href="https://www.instagram.com/smartlaundryexpressunima?igsh=MW44ZWowcjFtYmpiag=="
+            target="_blank"
+            class="text-blue-600 hover:underline"
+          >
+            @smartlaundryexpressunima
+          </a>
+        </p>
+      </div>
+
+      <!-- Google Maps -->
+      <div class="w-full mt-6 px-4">
+        <div style="position: relative; width: 100%; padding-top: 45%">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8404252837695!2d124.87329697423853!3d1.2685747618332324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32871536f57bda8f%3A0xf2af1a61ab48e64f!2sSmart%20Laundry%20Express%20UNIMA!5e0!3m2!1sid!2sid!4v1747301285875!5m2!1sid!2sid"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border: 0;
+              border-radius: 8px;
+            "
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section id="layanan" class="py-20 bg-gray-100 text-gray-800 text-center">
+      <h2 class="text-2xl font-bold mb-4">Layanan Kami</h2>
+      <p class="max-w-xl mx-auto mb-6">
+        Mulai dari cuci kiloan, satuan, hingga antar-jemput. Cepat, bersih, dan
+        terpercaya.
+      </p>
+      <div class="max-w-xl mx-auto text-left text-sm sm:text-base">
+        <ul class="list-disc pl-5 space-y-2">
+          <li>
+            <strong>Cuci Kering</strong> (1 Hari Selesai) - 5 kg = Rp20.000
+          </li>
+          <li>
+            <strong>Cuci Lipat</strong> (1 Hari Selesai) - 5 kg = Rp25.000
+          </li>
+          <li>
+            <strong>Cuci Basah</strong> (1 Hari Selesai) - 5 kg = Rp15.000
+          </li>
+          <li>
+            <strong>Cuci Sepatu</strong> (3 Hari Selesai) - 1 Pasang = Rp35.000
+          </li>
+        </ul>
+        <p class="mt-6 text-red-600 font-semibold">
+          CATATAN: Laundry tidak bertanggung jawab atas pakaian yang luntur.
+        </p>
+      </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="py-20 bg-white text-gray-800 text-center">
+      <h2 class="text-2xl font-bold mb-6">Galeri Foto</h2>
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4"
+      >
+        <img
+          src="img laundry6.jpg"
+          alt="Galeri 1"
+          class="rounded-lg shadow-lg"
+        />
+        <img src="LAUNDRYY.jpg" alt="Galeri 2" class="rounded-lg shadow-lg" />
+        <img
+          src="img.laundry2.jpg"
+          alt="Galeri 3"
+          class="rounded-lg shadow-lg"
+        />
+        <img
+          src="img laundry3.jpg"
+          alt="Galeri 4"
+          class="rounded-lg shadow-lg"
+        />
+        <img
+          src="img laundry4.jpg"
+          alt="Galeri 5"
+          class="rounded-lg shadow-lg"
+        />
+        <img
+          src="img laundry5.jpg"
+          alt="Galeri 6"
+          class="rounded-lg shadow-lg"
+        />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!DOCTYPE html>
+    <html lang="id">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Footer dengan Media Sosial Lengkap</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Font Awesome -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTTXRM9D1X8e5mN1g8E+Q6x1zWTiQYQ0uJHkMZylB4nR+L7b0pW4TLO8U4pumOBWZ2YZW7F8Mw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+      </head>
+      <body class="bg-gray-100 text-gray-900">
+        <footer class="bg-gray-800 text-gray-200 py-10">
+          <div
+            class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8"
+          >
+            <!-- Alamat -->
+            <div>
+              <h3 class="text-lg font-semibold mb-2">Alamat</h3>
+              <p>
+                Tataaran Patar, Kec. Tondano Selatan<br />
+                Kabupaten Minahasa, Sulawesi Utara 95618
+              </p>
+            </div>
+
+            <!-- Informasi & Sosial -->
+            <div class="text-center md:text-right">
+              <p class="mb-4">
+                Kami siap membantu Anda! Jika Anda memiliki pertanyaan, saran,
+                atau ingin mendapatkan informasi lebih lanjut tentang layanan
+                laundry kami, jangan ragu untuk menghubungi kami.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </body>
+    </html>
+  </body>
+</html>
